@@ -121,7 +121,8 @@ class whois {
                 }
             }
         } else {
-            $this->tldname = $domain[1];
+            
+            $this->tldname = isset($domain[1]) ? $domain[1] : 'com';
         }
     }
 
