@@ -1,10 +1,10 @@
 <?php
 
-include('whois.class.php');
+include 'whois.class.php';
 
 $domain_name = 'reg.ru';
 
-$domain = new whois( $domain_name );
+$domain = new whois($domain_name);
 $whois_answer = $domain->info();
 
 echo $whois_answer;
@@ -14,4 +14,3 @@ if ($domain->is_available()) {
 } else {
     echo "Domain is registered\n";
 }
-
